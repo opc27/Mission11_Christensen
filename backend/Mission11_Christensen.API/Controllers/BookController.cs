@@ -16,6 +16,7 @@ public class BookController : ControllerBase
     {
         var something = _bookContext.Books.AsQueryable();
         
+        // for sorting
         if (sortOrder.ToLower() == "asc")
         {
             something = something.OrderBy(b => b.Title);
@@ -24,7 +25,8 @@ public class BookController : ControllerBase
         {
             something = something.OrderByDescending(b => b.Title);
         }
-
+    
+        // pull all books
         var books = something
             .Skip((pageNum - 1) * pageSize)
             .Take(pageSize)

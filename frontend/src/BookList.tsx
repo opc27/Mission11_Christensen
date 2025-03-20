@@ -38,6 +38,7 @@ function BookList() {
       </label>
       <br />
       <br />
+      {/* Pull all book data */}
       {books.map((b) => (
         <div id="projectCard" className="card" key={b.bookID}>
           <h3 className="card-title">{b.title}</h3>
@@ -75,6 +76,7 @@ function BookList() {
           </div>
         </div>
       ))}
+      {/* Buttons for pagenation */}
       <button disabled={pageNum === 1} onClick={() => setPageNum(pageNum - 1)}>
         Previous
       </button>
