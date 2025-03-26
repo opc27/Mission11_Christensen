@@ -13,7 +13,10 @@ function App() {
           <Routes>
             <Route path="/" element={<BooksPage />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/addToCart" element={<AddToCartPage />} />
+            <Route
+              path="/addToCart/:title/:bookID/:price"
+              element={<AddToCartPage />}
+            />
           </Routes>
         </Router>
       </CartProvider>

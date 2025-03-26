@@ -15,7 +15,7 @@ function BookList({ selectedCategories }: { selectedCategories: string[] }) {
       const categoryParams = selectedCategories
         .map((cat) => `bookTypes=${encodeURIComponent(cat)}`)
         .join('&');
-
+      console.log(categoryParams);
       const response = await fetch(
         `https://localhost:5000/Book/AllBooks?pageSize=${pageSize}&pageNum=${pageNum}&sortOrder=${sortOrder}${selectedCategories.length ? `&${categoryParams}` : ''}`
       );
@@ -80,7 +80,9 @@ function BookList({ selectedCategories }: { selectedCategories: string[] }) {
 
             <button
               className="btn btn-success"
-              onClick={() => navigate(`/addToCart/${b.title}/${b.bookID}`)}
+              onClick={() =>
+                navigate(`/addToCart/${b.title}/${b.bookID}/${b.price}`)
+              }
             >
               Add to Cart
             </button>

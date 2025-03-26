@@ -50,7 +50,7 @@ public class BookController : ControllerBase
     // }
     
     [HttpGet("AllBooks")]
-    public async Task<IActionResult> GetBooks(int pageSize = 10, int pageNum = 1, [FromQuery] string sortOrder = "asc", List<string>? bookTypes = null)
+    public async Task<IActionResult> GetBooks(int pageSize = 10, int pageNum = 1, [FromQuery] string sortOrder = "asc", [FromQuery]List<string>? bookTypes = null)
     {
         // Ensure pageNum and pageSize are within valid ranges
         if (pageNum < 1) pageNum = 1;

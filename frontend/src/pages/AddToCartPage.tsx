@@ -11,7 +11,7 @@ function AddToCartPage() {
   const handleAddToCart = () => {
     const newItem: CartItem = {
       bookID: Number(bookID),
-      title: title || 'No Project Found',
+      title: title || 'No Book Found',
       price: Number(price),
     };
     addToCart(newItem);
@@ -23,7 +23,7 @@ function AddToCartPage() {
       <WelcomeBand />
       <h2>Adding {title} to Cart</h2>
       <div>
-        <p>Price: {price}</p>
+        <p>Price: ${Number(price)}</p>
         <button onClick={handleAddToCart}>Add to Cart</button>
       </div>
 
