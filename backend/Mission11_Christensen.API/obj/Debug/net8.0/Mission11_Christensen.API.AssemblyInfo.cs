@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission11_Christensen.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+336bf90b293d537dbd354b89fef6afb5a78a7155")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c7165dc97e10eaf9d7658ffa9f6a8a643915371")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission11_Christensen.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission11_Christensen.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,3 +1,4 @@
+/* Category filter container */
 .category-filter {
   display: flex;
   flex-direction: column;
@@ -5,20 +6,60 @@
   font-family: Arial, sans-serif;
 }
 
+/* Container for category list */
 .category-list {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
+/* Style for each checkbox item */
 .category-item {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
+/* Custom checkbox style */
 .category-checkbox {
   flex-shrink: 0;
-  width: 16px;
-  height: 16px;
+  width: 20px; /* Adjusted size for better visibility */
+  height: 20px;
+  cursor: pointer;
+  appearance: none; /* Remove default checkbox appearance */
+  border: 2px solid #007bff; /* Custom border */
+  border-radius: 4px; /* Optional: rounded corners for the checkbox */
+  transition: all 0.3s ease; /* Smooth transition for hover and checked state */
+}
+
+/* Hover effect for checkboxes */
+.category-list input[type='checkbox']:hover {
+  background-color: #e7f3fe; /* Light background color */
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5); /* Glow effect */
+  border-color: #007bff; /* Border color when hovered */
+  cursor: pointer;
+}
+
+/* Focused state for checkbox */
+.category-list input[type='checkbox']:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 2px rgba(0, 123, 255, 0.6); /* Focus glow effect */
+}
+
+/* Checked state for checkbox */
+.category-list input[type='checkbox']:checked {
+  background-color: #007bff; /* Background color for checked state */
+  border-color: #0056b3; /* Darker border when checked */
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5); /* Glow effect for checked */
+}
+
+/* Hover effect for label to enhance user experience */
+.category-list label:hover {
+  color: #007bff; /* Change label color on hover */
+  cursor: pointer;
+}
+
+/* Checked state for label */
+.category-list input[type='checkbox']:checked + label {
+  color: #007bff; /* Change label color when checkbox is checked */
 }
