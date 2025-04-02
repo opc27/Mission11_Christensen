@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/b85a7666-aa5d-471c-a4dd-3a7798e5ece1/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/Mission13-Christensen-backend",
+  "appService.deploySubpath": "backend/Mission11_Christensen.API/publish"
+}
